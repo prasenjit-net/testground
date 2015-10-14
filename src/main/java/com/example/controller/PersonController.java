@@ -18,9 +18,9 @@ import java.util.List;
 /**
  * Created by PRASENJIT on 10/14/2015.
  */
-//@RestController
-//@RequestMapping("/person")
-//@ExposesResourceFor(PersonResource.class)
+@RestController
+@RequestMapping("/person")
+@ExposesResourceFor(PersonResource.class)
 public class PersonController {
 
     @Autowired

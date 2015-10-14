@@ -10,14 +10,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 /**
  * Created by PRASENJIT on 10/14/2015.
  */
-//@RestController
-//@RequestMapping("/order")
-//@ExposesResourceFor(OrderResource.class)
+@RestController
+@RequestMapping("/order")
+@ExposesResourceFor(OrderResource.class)
 public class OrderController {
 
     @Autowired
