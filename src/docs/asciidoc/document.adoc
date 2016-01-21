@@ -1,5 +1,7 @@
 = My nice documentation
+Prasenjit Purohit <prasenjit@prasenjit.net>
 
+== Order Endpoint
 To access orders curl can be used in this way
 
 include::{snippets}/orders/curl-request.adoc[]
