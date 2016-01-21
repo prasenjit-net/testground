@@ -1,1 +1,13 @@
 = My nice documentation
+
+To access orders curl can be used in this way
+
+include::{snippets}/orders/curl-request.adoc[]
+
+Request can be in this way
+
+include::{snippets}/orders/http-request.adoc[]
+
+Response can be in this way
+
+include::{snippets}/orders/http-response.adoc[]

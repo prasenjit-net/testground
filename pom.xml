@@ -123,13 +123,14 @@
                     <sourceDirectory>src/docs/asciidoc</sourceDirectory>
                     <!-- Attributes common to all output formats -->
                     <attributes>
+                        <snippets>${project.build.directory}/snippets</snippets>
                         <sourcedir>${project.build.sourceDirectory}</sourcedir>
                     </attributes>
                 </configuration>
                 <executions>
                     <execution>
                         <id>generate-pdf-doc</id>
-                        <phase>generate-resources</phase>
+                        <phase>prepare-package</phase>
                         <goals>
                             <goal>process-asciidoc</goal>
                         </goals>
