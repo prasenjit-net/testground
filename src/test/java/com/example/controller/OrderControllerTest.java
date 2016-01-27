@@ -2,6 +2,8 @@ package com.example.controller;
 
 import org.junit.Test;
 
+import static org.springframework.restdocs.headers.HeaderDocumentation.headerWithName;
+import static org.springframework.restdocs.headers.HeaderDocumentation.responseHeaders;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.linkWithRel;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.links;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
@@ -17,6 +19,9 @@ public class OrderControllerTest extends AbstractControllerBase {
 
     @Test
     public void testGetAll() throws Exception {
+        document.snippets(responseHeaders(
+                headerWithName("sid").description("The Content-Type of the payload, e.g. 'application/hal+json'")));
+
         mockMvc.perform(get("/order"))
                 .andExpect(status().isOk())
                 .andDo(document("orders",
