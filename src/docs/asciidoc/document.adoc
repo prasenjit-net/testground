@@ -1,15 +1,16 @@
 = My nice documentation
 Prasenjit Purohit <prasenjit@prasenjit.net>
 
-== Order Endpoint
-To access orders curl can be used in this way
+== Retrieve All Orders
 
+=== Curl Request
+To access orders curl can be used in this way
 include::{snippets}/orders/curl-request.adoc[]
 
+=== Request
 Request can be in this way
-
 include::{snippets}/orders/http-request.adoc[]
 
+=== Response
 Response can be in this way
-
 include::{snippets}/orders/http-response.adoc[]
